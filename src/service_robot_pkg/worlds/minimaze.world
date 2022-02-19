@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <world name="default">
+
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>-0.812762 -1.95759 33.0329 0 1.5578 -4.4e-05</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <include>
+	<static>true</static>
+	<name>a_maze_ing</name>
+        <uri>model://maze</uri>
+    </include>
+
+  </world>
+</sdf>
